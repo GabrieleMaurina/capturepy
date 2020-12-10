@@ -4,7 +4,7 @@ Capturepy captures the standard output and the standard error of functions, meth
 
 ### Install
 
-pip install output_capture
+`pip install capturepy`
 
 It requires python 3.8 or higher.
 
@@ -32,7 +32,6 @@ print('The captured output is:')
 print(output)
 print('The function returned:')
 print(result)
-print()
 ```
 
 ##### Capturing only standard error of code using "with" statement
@@ -47,5 +46,4 @@ with Capture(stdout=False) as capture:
 
 print('The captured stderr is:')
 print(output)
-print()
 ```
