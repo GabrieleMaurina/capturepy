@@ -1,22 +1,22 @@
 #!/usr/bin/env python
 
 import setuptools
-import output_capture
+import capturepy
 
 with open('README.md', 'r') as fh:
 	long_description = fh.read()
 
 setuptools.setup(
-	name='output_capture',
-	version=output_capture.__version__,
+	name='capturepy',
+	version=capturepy.__version__,
 	author='Gabriele Maurina',
 	author_email='gabrielemaurina95@gmail.com',
-	description='output_capture captures the standard output and the standard error of functions, methods and any blocks of code. It is useful when testing, debugging and working with libraries. Find out more at https://github.com/GabrieleMaurina/output_capture.',
+	description='Capturepy captures the standard output and the standard error of functions, methods and any blocks of code. It is useful when testing, debugging and working with libraries. Find out more at https://github.com/GabrieleMaurina/capturepy.',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
-	url='https://github.com/GabrieleMaurina/capture_output',
+	url='https://github.com/GabrieleMaurina/capturepy',
 	licence='MIT',
-	py_modules=['capture_output'],
+	py_modules=['capturepy'],
 	classifiers=[
 		'Programming Language :: Python :: 3',
 		'License :: OSI Approved :: MIT License',

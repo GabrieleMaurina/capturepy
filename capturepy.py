@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-output_capture captures the standard output and the standard error of functions, methods and any blocks of code. It is useful when testing, debugging and working with libraries. Find out more at https://github.com/GabrieleMaurina/output_capture.
+Capturepy captures the standard output and the standard error of functions, methods and any blocks of code. It is useful when testing, debugging and working with libraries. Find out more at https://github.com/GabrieleMaurina/capturepy.
 '''
 
 import sys
@@ -60,7 +60,7 @@ class Capture:
 
 	def get(self):
 		'''
-		Returs captured string.
+		Returns captured string.
 		'''
 		return self.__string.getvalue()
 

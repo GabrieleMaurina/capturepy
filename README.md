@@ -1,6 +1,6 @@
-# output_capture
+# capturepy
 
-output_capture captures the standard output and the standard error of functions, methods and any blocks of code. It is useful when testing, debugging and working with libraries.
+Capturepy captures the standard output and the standard error of functions, methods and any blocks of code. It is useful when testing, debugging and working with libraries.
 
 ### Install
 
@@ -18,7 +18,7 @@ Here are some examples:
 
 ##### Capturing output of function
 ```python
-import output_capture
+from capturepy import Capture
 print('Capture stdout and stderr of function using the Capture decorator.')
 
 @Capture
@@ -37,7 +37,7 @@ print()
 
 ##### Capturing only standard error of code using "with" statement
 ```python
-import output_capture
+from capturepy import Capture
 print('Capture only stderr of code using the "with" statement.')
 
 with Capture(stdout=False) as capture:

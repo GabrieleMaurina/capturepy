@@ -1,4 +1,4 @@
-from output_capture import Capture
+from capturepy import Capture
 import sys
 
 
