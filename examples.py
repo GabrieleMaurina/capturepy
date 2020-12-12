@@ -30,9 +30,9 @@ def my_func():
 	print('first', end='')
 	print('second', file=sys.stderr)
 
-output, result = my_func()
+stdout, result = my_func()
 print('The captured stdout is:')
-print(output)
+print(stdout)
 print('The function returned:')
 print(result)
 print()
@@ -67,10 +67,10 @@ print('Capture only stderr of code using the "with" statement.')
 with Capture(stdout=False) as capture:
 	print('first')
 	print('second', end='', file=sys.stderr)
-	output = capture.get()
+	stderr = capture.get()
 
 print('The captured stderr is:')
-print(output)
+print(stderr)
 print()
 
 

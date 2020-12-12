@@ -42,8 +42,8 @@ print('Capture only stderr of code using the "with" statement.')
 with Capture(stdout=False) as capture:
 	print('first')
 	print('second', end='', file=sys.stderr)
-	output = capture.get()
+	stderr = capture.get()
 
 print('The captured stderr is:')
-print(output)
+print(stderr)
 ```
